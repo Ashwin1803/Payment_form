@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title> PAYMENT FORM</title>
+        <link rel="stylesheet" href="style_payment_form.css">
+    </head>
+    <BODY> 
+        <div class="container">
+        <form method="get">
+        <h1 class="main-heading">Payment Form</h1>
+        <hr>
+        <h2>USER INFORMATION</h2>
+        <p>NAME: <INPUT type="text" name="NAME" required placeholder="Type Your Name"></p>
+        <P>CONTACT: <INPUT type="number" name="contact" id="CONTACT" required placeholder="Type Your Phone Number"></P>
+                <fieldset> 
+                    <LEGEND>GENDER </LEGEND>
+                    <p>
+                   MALE<INPUT type="radio" name="gender" id="male" required> FEMALE<input type="radio" name="gender" id="female">
+                    </p>
+            </fieldset>
+        <p>EMAIL: <input type="email" NAME="EMAIL" ID="EMAIL" required placeholder="31255csiot@gmail.com"></p>
+        ADDRESS<textarea cols="178" rows="5" placeholder="Type Your Address"></textarea>
+        <p>PINCODE: <INPUT type="number" name="pincode" id="pincode" required placeholder="12345678"></p>
+        <h2>PAYMENT INFORMATION</h2>
+        <p required>CARD TYPE 
+            <SELECT>
+                <OPTION value="--SELECT A CARD TYPE--">--SELECT A CARD TYPE--</OPTION>
+                <OPTION value="RUPAY">RUPAY</OPTION>
+                <OPTION value="VISA">VISA</OPTION>
+                <OPTION value="MASTER CARD">MASTER CARD</OPTION>
+            </SELECT>
+        </p>
+        <P>CARD NUMBER:<INPUT type="NUMBER" name="CARD NUMBER" id="CARD NUMBER" required placeholder="1111-2222-3333-4444"></P>
+            <p>EXPIRY DATE:<input type="date"  name="expiry date" id="expiry date" required></p>
+        <p>CVV <input type="password" name="CVV" id="CVV" required placeholder="123" ></p> 
+        <INPUT type="submit" value="Pay Now" id="Pay Now">
+        <input type="reset" value="Cancel" id="Cancel">
+        </form>
+        </div>
+        </BODY>
+</html>
